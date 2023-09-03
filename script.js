@@ -465,7 +465,7 @@ function updatePokemon(index) {
     container.className = "container";
     container.classList.add(pokemon.type);
 
-    const maxHP = 91;
+    const maxHP = 120;
     const currentHP = parseInt(pokemon.hp);
     updateHPBar(currentHP, maxHP);
 
