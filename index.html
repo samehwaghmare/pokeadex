@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Pokemon Website</title>
+  </head>
+  <body>
+    <div class="background"></div>
+    <h1 class="header">Who's that Pokémon?</h1>
+    <div class="container">
+      <img class="pokemon-image" src="" alt="Pokemon Image" />
+      <div class="pokemon-details">
+        <h1 class="pokemon-name custom-name"></h1>
+        <p class="pokemon-hp"></p>
+        <img class="pokemon-type" src="" alt="Pokemon Type Icon" />
+        <div class="pokemon-hp-bar" data-hp="60">
+          <div class="hp-bar-fill"></div>
+        </div>
+        <div class="pokemon-cutness-bar" data-cuteness="20">
+          <div class="cuteness-label">Cuteness</div>
+          <div class="cuteness-bar-container">
+            <div class="cuteness-bar-fill"></div>
+            <p class="disc">
+              This cuteness is according to me. T&C Apply.
+            </p>
+          </div>
+        </div>
+        <div class="button-container">
+          <button id="next-button">Random Pokemon</button>
+        </div>
+      </div>
+    </div>
+    <div class="input-container">
+      <label for="pokemon-number">Or Pick A Random No. (1-55): </label>
+      <input
+        type="number"
+        id="pokemon-number"
+        min="1"
+        max="55"
+        class="pokemon-number-input"
+        inputmode="numeric"
+      />
+      <button id="search-button">Catch 'em</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
