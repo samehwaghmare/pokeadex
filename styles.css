@@ -113,6 +113,30 @@ body {
   right: 0;
 }
 
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 1280px) {
+  .pokemon-type {
+    width: 60px;
+    height: 60px;
+    padding: 40px;
+  }
+  .pokemon-name {
+    font-size: 5rem;
+  }
+}
+
+/* Media query for screens with a maximum width of 576px */
+@media (max-width: 1050px) {
+  .pokemon-type {
+    width: 50px;
+    height: 50px;
+    padding: 40px;
+  }
+  .pokemon-name {
+    font-size: 4rem;
+  }
+}
+
 .button-container {
   position: absolute;
   bottom: 40px;
@@ -283,7 +307,7 @@ body {
 
 .input-container {
   position: absolute;
-  bottom: 150px;
+  top: 710px;
   text-align: center;
   margin-top: 20px;
 }
