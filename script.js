@@ -491,9 +491,9 @@ document.getElementById("next-button").addEventListener("click", () => {
 document.getElementById("search-button").addEventListener("click", () => {
   const inputElement = document.getElementById("pokemon-number");
   const inputValue = parseInt(inputElement.value);
-  
+
   if (!isNaN(inputValue) && inputValue >= 1 && inputValue <= 60) {
-    updatePokemon(inputValue - 1); 
+    updatePokemon(inputValue - 1);
   } else {
     alert("Please enter a valid Pokémon number between 1 and 60.");
   }
